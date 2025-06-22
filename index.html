@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muscle Log</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ff2a2a" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</head>
+<body>
+<h1>Muscle Log</h1>
+<!-- The rest of your log app goes here (cut short for size) -->
+</body>
+</html>
